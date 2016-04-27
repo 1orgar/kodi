@@ -118,7 +118,7 @@
   </extension>
 </addon>
 
-<addon id='script.module.libtorrent' version='1.0.9i' name='python-libtorrent' provider-name='DiMartino, srg70, RussakHH, aisman, inpos'>
+<addon id='script.module.libtorrent' version='1.1.0a' name='python-libtorrent' provider-name='DiMartino, srg70, RussakHH, aisman, inpos'>
   <requires>
     <import addon='xbmc.python' version='2.1.0'/>
   </requires>
@@ -174,7 +174,7 @@
   </extension>
 </addon>
 
-<addon id='script.module.torrent.ts' version='0.7.2.0' name='AceStream client' provider-name='1orgar'>
+<addon id='script.module.torrent.ts' version='0.7.3' name='AceStream client' provider-name='1orgar'>
   <requires>
     <import addon='xbmc.python' version='2.7.8'/>
   </requires>
