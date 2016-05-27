@@ -64,24 +64,6 @@
 	</extension>
 </addon>
 
-<addon id="script.module.beautifulsoup4"
-       name="BeautifulSoup4"
-       version="4.4.1.1"
-       provider-name="Leonard Richardson">
-  <requires>
-    <import addon="xbmc.python" version="2.7.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary>Beautiful Soup Screen-scraping library</summary>
-    <description>Beautiful Soup sits atop an HTML or XML parser, providing Pythonic idioms for iterating, searching, and modifying the parse tree.</description>
-    <platform>all</platform>
-    <license>MIT</license>
-    <website>http://www.crummy.com/software/BeautifulSoup/bs4/</website>
-  </extension>
-</addon>
-
 <addon id="script.module.chardet"
        name="chardet"
        version="2.2.1"
@@ -174,7 +156,7 @@
   </extension>
 </addon>
 
-<addon id='script.module.torrent.ts' version='0.7.3.2' name='AceStream client' provider-name='1orgar'>
+<addon id='script.module.torrent.ts' version='0.7.3.3' name='AceStream client' provider-name='1orgar'>
   <requires>
     <import addon='xbmc.python' version='2.7.8'/>
   </requires>
