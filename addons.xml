@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.anidub"
        name="[COLOR=FF666E7F]Ani[/COLOR][COLOR=FFE84C3D]DUB[/COLOR]"
-       version="0.6.0.6"
+       version="0.6.0.7"
        provider-name="1orgar">
   <requires>
     <import addon="xbmc.python" version="2.7.8"/>
@@ -21,7 +21,7 @@
 
 <addon id="plugin.video.torrent.file.player"
        name="Torrent file player"
-       version="0.4.2.4"
+       version="0.4.3.1"
        provider-name="1orgar">
   <requires>
       <import addon="xbmc.python" version="2.7.8"/>
@@ -126,7 +126,7 @@
         <source>https://github.com/inpos/script.module.pyrrent2http</source></extension>
 </addon>
 
-<addon id="script.module.tengine" name="tengine" version="1.4" provider-name="1orgar">
+<addon id="script.module.tengine" name="tengine" version="1.4.5.2" provider-name="1orgar">
   <requires>
     <import addon="xbmc.python" version="2.7.8"/>
     <import addon="script.module.libtorrent"/>
@@ -134,6 +134,9 @@
     <import addon="script.module.pyrrent2http"/>
     <import addon="script.module.torrent2http"/>
   </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary>Simple interface to most popular torrent engines</summary>
@@ -143,7 +146,7 @@
   </extension>
 </addon>
 
-<addon id='script.module.torrent.ts' version='0.7.3.5' name='AceStream client' provider-name='1orgar'>
+<addon id='script.module.torrent.ts' version='0.7.3.6' name='AceStream client' provider-name='1orgar'>
   <requires>
     <import addon='xbmc.python' version='2.7.8'/>
   </requires>
