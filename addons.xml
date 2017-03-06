@@ -21,10 +21,10 @@
 
 <addon id="plugin.video.torrent.file.player"
        name="Torrent file player"
-       version="0.4.3.1"
+       version="0.4.3.2"
        provider-name="1orgar">
   <requires>
-      <import addon="xbmc.python" version="2.7.8"/>
+      <import addon="xbmc.python" version="2.7.13"/>
       <import addon="script.module.tengine"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -105,7 +105,7 @@
   <extension point='xbmc.python.module'/>
 </addon>
 
-<addon id="script.module.pyrrent2http" name="pyrrent2http" version="0.9.7" provider-name="inpos">
+<addon id="script.module.pyrrent2http" name="pyrrent2http" version="0.9.8" provider-name="inpos">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
         <import	addon="script.module.libtorrent" />
@@ -126,9 +126,9 @@
         <source>https://github.com/inpos/script.module.pyrrent2http</source></extension>
 </addon>
 
-<addon id="script.module.tengine" name="tengine" version="1.4.5.3" provider-name="1orgar">
+<addon id="script.module.tengine" name="tengine" version="1.4.6" provider-name="1orgar">
   <requires>
-    <import addon="xbmc.python" version="2.7.8"/>
+    <import addon="xbmc.python" version="2.7.13"/>
     <import addon="script.module.libtorrent"/>
     <import addon="script.module.torrent.ts"/>
     <import addon="script.module.pyrrent2http"/>
@@ -160,9 +160,10 @@
   </extension>
 </addon>
 
-<addon id="script.module.torrent2http" name="torrent2http" version="0.2.0" provider-name="anteo">
+<addon id="script.module.torrent2http" name="torrent2http" version="0.2.5a" provider-name="anteo">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
+		<import addon="script.module.requests" optional="false"/>
     </requires>
     <extension point="xbmc.python.module" library="lib"/>
 	<extension point="xbmc.python.script" library="main.py">
