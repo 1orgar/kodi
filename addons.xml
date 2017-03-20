@@ -2,12 +2,13 @@
 <addons>
 <addon id="plugin.video.anidub"
        name="[COLOR=FF666E7F]Ani[/COLOR][COLOR=FFE84C3D]DUB[/COLOR]"
-       version="0.6.0.7"
+       version="0.6.1"
        provider-name="1orgar">
   <requires>
     <import addon="xbmc.python" version="2.7.8"/>
         <import addon="script.module.beautifulsoup4"/>
         <import addon="script.module.tengine"/>
+        <import addon="script.module.cfscrape"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -69,6 +70,25 @@
   </extension>
 </addon>
 
+<addon id="script.module.cfscrape"
+       name="cfscrape"
+       version="1.3"
+       provider-name="Anorov">
+  <requires>
+    <import addon="xbmc.python" version="2.7.8"/>
+    <import addon="script.module.js2py"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>A simple Python module to bypass Cloudflare's anti-bot page</summary>
+    <description>Packed for XBMC from https://github.com/Anorov/cloudflare-scrape</description>
+    <license>LGPL</license>
+    <platform>all</platform>
+    <source>https://github.com/Anorov/cloudflare-scrape/tree/master</source>
+  </extension>
+</addon>
+
 <addon id="script.module.chardet"
        name="chardet"
        version="2.2.1"
@@ -84,6 +104,24 @@
     <license>LGPL</license>
     <platform>all</platform>
     <source>https://github.com/erikrose/chardet/commits/master</source>
+  </extension>
+</addon>
+
+<addon id="script.module.js2py"
+       name="js2py"
+       version="1.0"
+       provider-name="PiotrDabkowski">
+  <requires>
+    <import addon="xbmc.python" version="2.7.8"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>JavaScript to Python Translator JavaScript interpreter written in 100% pure Python</summary>
+    <description>Packed for XBMC from https://github.com/PiotrDabkowski/Js2Py</description>
+    <license>LGPL</license>
+    <platform>all</platform>
+    <source>https://github.com/PiotrDabkowski/Js2Py/tree/master</source>
   </extension>
 </addon>
 
