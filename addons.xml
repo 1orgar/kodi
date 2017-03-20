@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.anidub"
        name="[COLOR=FF666E7F]Ani[/COLOR][COLOR=FFE84C3D]DUB[/COLOR]"
-       version="0.6.1"
+       version="0.6.1.1"
        provider-name="1orgar">
   <requires>
     <import addon="xbmc.python" version="2.7.8"/>
