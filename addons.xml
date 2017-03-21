@@ -164,7 +164,7 @@
         <source>https://github.com/inpos/script.module.pyrrent2http</source></extension>
 </addon>
 
-<addon id="script.module.tengine" name="tengine" version="1.5.0" provider-name="1orgar">
+<addon id="script.module.tengine" name="tengine" version="1.5.1" provider-name="1orgar">
   <requires>
     <import addon="xbmc.python" version="2.7.13"/>
     <import addon="script.module.libtorrent"/>
