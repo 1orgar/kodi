@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.anidub"
        name="[COLOR=FF666E7F]Ani[/COLOR][COLOR=FFE84C3D]DUB[/COLOR]"
-       version="0.6.1.1"
+       version="0.6.1.2"
        provider-name="1orgar">
   <requires>
     <import addon="xbmc.python" version="2.7.8"/>
@@ -22,7 +22,7 @@
 
 <addon id="plugin.video.torrent.file.player"
        name="Torrent file player"
-       version="0.4.3.2"
+       version="0.4.3.3"
        provider-name="1orgar">
   <requires>
       <import addon="xbmc.python" version="2.7.13"/>
@@ -164,7 +164,7 @@
         <source>https://github.com/inpos/script.module.pyrrent2http</source></extension>
 </addon>
 
-<addon id="script.module.tengine" name="tengine" version="1.4.6" provider-name="1orgar">
+<addon id="script.module.tengine" name="tengine" version="1.5.0" provider-name="1orgar">
   <requires>
     <import addon="xbmc.python" version="2.7.13"/>
     <import addon="script.module.libtorrent"/>
