@@ -164,7 +164,7 @@
         <source>https://github.com/inpos/script.module.pyrrent2http</source></extension>
 </addon>
 
-<addon id="script.module.tengine" name="tengine" version="1.5.1" provider-name="1orgar">
+<addon id="script.module.tengine" name="TEngine" version="1.5.2" provider-name="1orgar">
   <requires>
     <import addon="xbmc.python" version="2.7.13"/>
     <import addon="script.module.libtorrent"/>
@@ -178,7 +178,7 @@
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <summary>Simple interface to most popular torrent engines</summary>
-    <description>Simple interface to most popular KODI torrent engines: AceStream, torrent2http, pyrrent2http</description>
+    <description>Simple interface to most popular KODI torrent streaming engines</description>
     <license>GPL</license>
     <platform>all</platform>
   </extension>
