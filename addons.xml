@@ -2,13 +2,14 @@
 <addons>
 <addon id="plugin.video.anidub"
        name="[COLOR=FF666E7F]Ani[/COLOR][COLOR=FFE84C3D]DUB[/COLOR]"
-       version="0.6.1.2"
+       version="0.6.1.4"
        provider-name="1orgar">
   <requires>
     <import addon="xbmc.python" version="2.7.8"/>
         <import addon="script.module.beautifulsoup4"/>
         <import addon="script.module.tengine"/>
         <import addon="script.module.cfscrape"/>
+        <import addon="script.module.cdebug"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -22,7 +23,7 @@
 
 <addon id="plugin.video.torrent.file.player"
        name="Torrent file player"
-       version="0.4.3.3"
+       version="0.4.3.5"
        provider-name="1orgar">
   <requires>
       <import addon="xbmc.python" version="2.7.13"/>
@@ -67,6 +68,22 @@
     <platform>all</platform>
     <license>MIT</license>
     <website>http://www.crummy.com/software/BeautifulSoup/bs4/</website>
+  </extension>
+</addon>
+
+<addon id="script.module.cdebug"
+       name="cdebug"
+       version="1.0"
+       provider-name="1orgar">
+  <requires>
+    <import addon="xbmc.python" version="2.7.13"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Debug engine</summary>
+    <license>LGPL</license>
+    <platform>all</platform>
   </extension>
 </addon>
 
@@ -164,29 +181,30 @@
         <source>https://github.com/inpos/script.module.pyrrent2http</source></extension>
 </addon>
 
-<addon id="script.module.tengine" name="TEngine" version="1.5.2" provider-name="1orgar">
+<addon id="script.module.tengine" name="TEngine" version="1.5.5" provider-name="1orgar">
   <requires>
     <import addon="xbmc.python" version="2.7.13"/>
     <import addon="script.module.libtorrent"/>
     <import addon="script.module.torrent.ts"/>
     <import addon="script.module.pyrrent2http"/>
     <import addon="script.module.torrent2http"/>
+    <import addon="script.module.cdebug"/>
   </requires>
   <extension point="xbmc.python.script" library="default.py">
     <provides>executable</provides>
   </extension>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
-    <summary>Simple interface to most popular torrent engines</summary>
+    <summary>TEngine torrent streaming support</summary>
     <description>Simple interface to most popular KODI torrent streaming engines</description>
     <license>GPL</license>
     <platform>all</platform>
   </extension>
 </addon>
 
-<addon id='script.module.torrent.ts' version='0.7.3.6' name='AceStream client' provider-name='1orgar'>
+<addon id='script.module.torrent.ts' version='0.7.3.7' name='AceStream client' provider-name='1orgar'>
   <requires>
-    <import addon='xbmc.python' version='2.7.8'/>
+    <import addon='xbmc.python' version='2.7.13'/>
   </requires>
     <extension point="xbmc.python.script" library="default.py">
     	<provides>executable</provides>
