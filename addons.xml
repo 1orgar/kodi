@@ -1,44 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.anidub"
-       name="[COLOR=FF666E7F]Ani[/COLOR][COLOR=FFE84C3D]DUB[/COLOR]"
-       version="0.6.1.4"
-       provider-name="1orgar">
-  <requires>
-    <import addon="xbmc.python" version="2.7.8"/>
-        <import addon="script.module.beautifulsoup4"/>
-        <import addon="script.module.tengine"/>
-        <import addon="script.module.cfscrape"/>
-        <import addon="script.module.cdebug"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Anidub</summary>
-    <description>[COLOR=FF666E7F]Ani[/COLOR][COLOR=FFE84C3D]DUB[/COLOR] tracker client</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.torrent.file.player"
-       name="Torrent file player"
-       version="0.4.3.7"
-       provider-name="1orgar">
-  <requires>
-      <import addon="xbmc.python" version="2.7.13"/>
-      <import addon="script.module.tengine"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Torrent file player</summary>
-    <description>Torrent file player for for AceStream, pyrrent2http and torrent2http</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="repository.1orgar" name="1orgar repo" version="1.0.0.7" provider-name="1orgar">
 	<extension point="xbmc.addon.repository" name="1orgar repo">
 		<info compressed="false">https://github.com/1orgar/kodi/raw/master/addons.xml</info>
@@ -142,24 +103,6 @@
   </extension>
 </addon>
 
-<addon id='script.module.libtorrent' version='1.1.1d' name='python-libtorrent' provider-name='DiMartino, srg70, RussakHH, aisman, inpos'>
-  <requires>
-    <import addon='xbmc.python' version='2.1.0'/>
-  </requires>
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.python.module" library="python_libtorrent"/>
-  <extension point='xbmc.addon.metadata'>
-    <platform>all</platform>
-    <summary lang='en'>script.module.libtorrent is a Kodi module that makes easy import of python-libtorrent for you.</summary>
-    <summary lang='ru'>script.module.libtorrent - модуль Kodi, который упрощает импорт библиотеки python-libtorrent.</summary>
-    <license>MIT License</license>
-    <source>https://github.com/DiMartinoXBMC/script.module.libtorrent</source>
-  </extension>
-  <extension point='xbmc.python.module'/>
-</addon>
-
 <addon id="script.module.pyrrent2http" name="pyrrent2http" version="0.9.8" provider-name="inpos">
     <requires>
         <import addon="xbmc.python" version="2.14.0"/>
@@ -214,27 +157,6 @@
     <platform>all</platform>
     <summary>AceStream client</summary>
   </extension>
-</addon>
-
-<addon id="script.module.torrent2http" name="torrent2http" version="0.2.6" provider-name="anteo,DiMartino,-=Vd=-">
-    <requires>
-        <import addon="xbmc.python" version="2.14.0"/>
-		<import addon="script.module.requests" optional="false"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib"/>
-	<extension point="xbmc.python.script" library="main.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <language>en</language>
-        <summary lang="en">Downloads torrents and share it over HTTP</summary>
-        <summary lang="ru">Загружает торренты и раздает их по HTTP</summary>
-        <description lang="ru">Обеспечивает последовательную (sequential) загрузку торрентов для потокового онлайн просмотра через HTTP. Основан на библиотеке LibTorrent.</description>
-        <description lang="en">Provides sequential torrent downloading for online streaming video and other media over HTTP.</description>
-        <email>anteo@academ.org</email>
-    </extension>
 </addon>
 
 <addon id="service.xbmc.versioncheck"
@@ -354,5 +276,66 @@
         <email></email>
         <source>https://github.com/XBMC-Addons/service.xbmc.versioncheck</source>
     </extension>
+</addon>
+
+<addon id='script.module.libtorrent' version='1.1.1g' name='python-libtorrent' provider-name='DiMartino, srg70, RussakHH, aisman, inpos'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="python_libtorrent"/>
+  <extension point='xbmc.addon.metadata'>
+    <platform>all</platform>
+    <summary lang='en'>script.module.libtorrent is a Kodi module that makes easy import of python-libtorrent for you.</summary>
+    <summary lang='ru'>script.module.libtorrent - модуль Kodi, который упрощает импорт библиотеки python-libtorrent.</summary>
+    <summary lang='es'>script.module.libtorrent es un módulo de Kodi que facilita la importación de la librería python-libtorrent.</summary>
+    <license>MIT License</license>
+    <source>https://github.com/DiMartinoXBMC/script.module.libtorrent</source>
+  </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id="script.module.torrent2http" name="torrent2http" version="0.2.6" provider-name="anteo,DiMartino,-=Vd=-">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+		<import addon="script.module.requests" optional="false"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+	<extension point="xbmc.python.script" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <summary lang="en">Downloads torrents and share it over HTTP</summary>
+        <summary lang="ru">Загружает торренты и раздает их по HTTP</summary>
+        <description lang="ru">Обеспечивает последовательную (sequential) загрузку торрентов для потокового онлайн просмотра через HTTP. Основан на библиотеке LibTorrent.</description>
+        <description lang="en">Provides sequential torrent downloading for online streaming video and other media over HTTP.</description>
+        <email>anteo@academ.org</email>
+    </extension>
+</addon>
+
+<addon id="plugin.video.anidub"
+       name="[COLOR=FF666E7F]Ani[/COLOR][COLOR=FFE84C3D]DUB[/COLOR]"
+       version="0.6.1.5"
+       provider-name="1orgar">
+  <requires>
+    <import addon="xbmc.python" version="2.7.8"/>
+        <import addon="script.module.beautifulsoup4"/>
+        <import addon="script.module.tengine"/>
+        <import addon="script.module.cfscrape"/>
+        <import addon="script.module.cdebug"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Anidub</summary>
+    <description>[COLOR=FF666E7F]Ani[/COLOR][COLOR=FFE84C3D]DUB[/COLOR] tracker client</description>
+    <platform>all</platform>
+  </extension>
 </addon>
 </addons>
