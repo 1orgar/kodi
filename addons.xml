@@ -338,4 +338,22 @@
     <platform>all</platform>
   </extension>
 </addon>
+
+<addon id="plugin.video.torrent.file.player"
+       name="Torrent file player"
+       version="0.4.3.7"
+       provider-name="1orgar">
+  <requires>
+      <import addon="xbmc.python" version="2.7.13"/>
+      <import addon="script.module.tengine"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Torrent file player</summary>
+    <description>Torrent file player for for AceStream, pyrrent2http and torrent2http</description>
+    <platform>all</platform>
+  </extension>
+</addon>
 </addons>
