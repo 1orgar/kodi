@@ -145,7 +145,7 @@
   </extension>
 </addon>
 
-<addon id='script.module.torrent.ts' version='0.7.3.8' name='AceStream client' provider-name='1orgar'>
+<addon id='script.module.torrent.ts' version='0.7.3.9' name='AceStream client' provider-name='1orgar'>
   <requires>
     <import addon='xbmc.python' version='2.7.13'/>
   </requires>
@@ -320,7 +320,7 @@
 
 <addon id="plugin.video.anidub"
        name="[COLOR=FF666E7F]Ani[/COLOR][COLOR=FFE84C3D]DUB[/COLOR]"
-       version="0.6.1.5"
+       version="0.6.1.6"
        provider-name="1orgar">
   <requires>
     <import addon="xbmc.python" version="2.7.8"/>
@@ -341,7 +341,7 @@
 
 <addon id="plugin.video.torrent.file.player"
        name="Torrent file player"
-       version="0.4.3.7"
+       version="0.4.3.7-dev"
        provider-name="1orgar">
   <requires>
       <import addon="xbmc.python" version="2.7.13"/>
